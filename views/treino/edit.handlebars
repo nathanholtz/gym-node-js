@@ -1,0 +1,35 @@
+<h1>Editando: {{treino.name}}</h1>
+
+<!--Criando um formulario direcionado para /edit com um metodo de post-->
+
+<form action="/treino/edit" class="form" method="post">
+
+<!-- input que recebe o valor do id sem mostrar na tela -->
+
+<input type="hidden" name="id" value="{{treino.id}}">
+
+<!-- Criando uma div para cada coluna da tabela onde possui uma classe para edição, e um input para adicionar um dado -->
+
+    <div class="form-control">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" placeholder=" nome do exercício" value="{{treino.name}}">
+    </div>
+    
+    <div class="form-control">
+        <label for="sets">Series:</label>
+        <input type="text" name="sets" placeholder="número de series" value="{{treino.sets}}">
+    </div>
+
+    <div class="form-control">
+        <label for="reps">Repetições:</label>
+        <input type="text" name="reps" placeholder="número de repetições" value="{{treino.reps}}">
+    </div>
+
+    <div class="form-control">
+        <label for="rests">Descanso:</label>
+        <input type="text" name="rests" placeholder=" tempo de descanso" value="{{treino.rests}}">
+    </div>
+
+    <input type="submit" value="Editar">
+
+</form>
