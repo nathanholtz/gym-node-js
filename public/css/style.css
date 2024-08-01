@@ -1,0 +1,310 @@
+/* General Styles */
+body {
+    background: rgb(99, 124, 233);
+    font: normal 15pt Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: rgb(99, 124, 233);
+}
+
+.empty p{
+    font-size: 16px;
+    text-align: center;
+    color: #004085;
+}
+
+/* Form Styles */
+.form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.form-control input {
+    padding: 5px;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: rgb(99, 124, 233);
+}
+
+.form-control input, .form-control textarea{
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid rgb(41, 41, 180);
+}
+
+form input[type='submit'],
+.btn{
+    background-color: transparent;
+    color: rgb(99, 124, 233);
+    border: 2px solid rgb(99, 124, 233);
+    padding: 0.3em 0.8em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+
+form input[type='submit']:hover,
+.btn:hover{
+    background-color: rgb(99, 124, 233);
+    color: #efefef;
+}
+
+
+/* Details styles */
+.details-control {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(99, 124, 233);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: rgb(99, 124, 233);
+}
+
+
+
+/* Navbar Styles */
+#navbar {
+    border-bottom: 1px solid rgb(99, 124, 233);
+    padding: 0.5em 2em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+
+    align-items: center;
+    filter: invert(1);
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin-left: 1em;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right;
+    transition: color 0.5s;
+}
+
+#navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+#navbar ul li p{
+    font-weight: bold;
+    color: #efefef;
+    margin-right: 1em;
+}
+
+#logo img {
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+#logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Container Styles */
+.container {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+}
+
+div {
+    text-align: left;
+    padding: 8px;
+}
+
+/* Search Styles*/
+
+.search-control{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-control span{
+    color: rgb(99, 124, 233);
+}
+
+.search-control input[type="text"]{
+    border: none;
+    border-bottom: 1px solid rgb(99, 124, 233);
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.search-control .btn{
+    padding: 2px 4px;  
+    margin-bottom: 10px;    
+}
+
+.search-control form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.order-container span{
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.order-container button{
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.order-container button:hover,
+.order-container a:hover{
+    color: rgb(99, 124, 233);
+}
+
+.order-container button,
+.order-container a{
+     margin: 0 5px;
+}
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Treino List Styles */
+.treino-list {
+    list-style: none;
+    margin-top: 1em;
+    padding: 0;
+}
+
+.treino-list li {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #bfbcf0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.treino-list .name {
+    font-weight: bold;
+    color: rgb(99, 124, 233);
+    transition: color 0.5s;
+    font-size: 1.2em;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+.treino-list .name:hover {
+    color: rgb(24, 45, 136);
+}
+
+.treino-list .created {
+    font-style: italic;
+    font-size: 0.6em;
+}
+
+/* Actions Styles */
+.actions {
+    display: flex;
+}
+
+.actions i {
+    font-size: 1.3em;
+    margin-right: 0.6em;
+    color: rgb(99, 124, 233);
+}
+
+.actions form {
+    margin: 0;
+}
+
+.actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*login e register*/
+.auth-container{
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container h2{
+    margin-bottom: 1em;
+    color: rgb(99, 124, 233);
+    border-left: 4px solid rgb(99, 124, 233);
+    padding: 0.3em;
+    width: 100px;
+}
+
+/*messages*/
+.message{
+    padding: 0.5em;
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 2em;
+    font-size: 15px;
+    max-width: 60%;
+}
